@@ -104,4 +104,56 @@
     font-size: 0.85rem;
     color: #666;
   }
+
+  /* Make cards clickable */
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  /* Project detail */
+  .project {
+    padding: 2rem;
+  }
+  
+  .project-intro {
+    max-width: 800px;
+    margin-bottom: 4rem;
+  }
+  
+  .project-intro h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-meta {
+    list-style: none;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .project-meta li {
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Gallery grid */
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
   
