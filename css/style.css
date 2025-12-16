@@ -171,3 +171,51 @@
     color: #fff;
   }
   
+  /* Hero with profile */
+.hero-profile {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .contacts {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  
+  .contacts li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contacts a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.95rem;
+  }
+  
+  .contacts a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .hero-profile {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero-image {
+      margin-top: 2rem;
+    }
+  }
+  
