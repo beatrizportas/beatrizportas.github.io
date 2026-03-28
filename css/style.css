@@ -78,8 +78,15 @@
   }
   
   .hero h1 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    white-space: nowrap;
     margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      white-space: normal;
+    }
   }
   
   .subtitle {
@@ -220,7 +227,7 @@
 .hero-profile {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 3rem;
+    gap: 1.5rem;
     align-items: center;
   }
   
@@ -287,10 +294,19 @@
   }
 
   .footer {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 2rem 1rem;
     font-size: 0.875rem;
     color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+  }
+
+  .footer .contacts {
+    margin-top: 0;
   }
   
   body {
