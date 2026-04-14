@@ -21,7 +21,6 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
-  border-top: 2px solid var(--text);
 }
 
 /* Navigation */
